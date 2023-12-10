@@ -62,7 +62,4 @@ Supports Building, Core, Menus modules.
 
 Email: SophieCrumpler1212@outlook.com
 
-### Please do not reupload this asset / this source code without my permission.
-
-# YOU CAN USE THIS ASSET IN YOUR GAMES ETC AS LONG AS YOU DO NOT UPLOAD THE ASSET AND/OR SOURCE CODE WITHOUT MY PERMISSION!
 
