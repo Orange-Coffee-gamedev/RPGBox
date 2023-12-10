@@ -13,6 +13,14 @@ public class Inventory_Item : MonoBehaviour
         itemID.Use();
     }
 
+    public string getItemName(){
+        return itemName;
+    }
+
+    public void setItemName(string name){
+        itemName = name;
+    }
+
     public int GetQuantity(){
         return quantity;
     }

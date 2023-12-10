@@ -553,7 +553,8 @@ GameObject:
   - component: {fileID: 3193637837792307824}
   - component: {fileID: 2626820827939499227}
   - component: {fileID: 1993064079609034709}
-  - component: {fileID: 3963276274665263022}
+  - component: {fileID: 2833076005977084222}
+  - component: {fileID: 2761208602243490819}
   m_Layer: 0
   m_Name: Dev_Item
   m_TagString: Untagged
@@ -628,10 +629,10 @@ MonoBehaviour:
   OnUpdate:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3963276274665263022}
-        m_TargetAssemblyTypeName: SetTMPText, Assembly-CSharp
-        m_MethodName: ChangeUI
-        m_Mode: 5
+      - m_Target: {fileID: 2833076005977084222}
+        m_TargetAssemblyTypeName: GetItemQuantity, Assembly-CSharp
+        m_MethodName: SetTMPTextToQuantity
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -640,7 +641,19 @@ MonoBehaviour:
           m_StringArgument: Dev_Item
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &3963276274665263022
+      - m_Target: {fileID: 2761208602243490819}
+        m_TargetAssemblyTypeName: InventorySupportSetTMPText, Assembly-CSharp
+        m_MethodName: SetTMPTextToName
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Dev_Item
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &2833076005977084222
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -649,10 +662,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 7393024207078496518}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 91663e0324cd1ad45b0c66fd71d65d15, type: 3}
+  m_Script: {fileID: 11500000, guid: 504a359c0edcd294897f8d0ec852d662, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tmp_text: {fileID: 4694952431730603616}
-  onUIChanged:
-    m_PersistentCalls:
-      m_Calls: []
+  tmp_Text: {fileID: 112692400446432415}
+  inventory_Item: {fileID: 2626820827939499227}
+--- !u!114 &2761208602243490819
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7393024207078496518}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 504a359c0edcd294897f8d0ec852d662, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tmp_Text: {fileID: 4694952431730603616}
+  inventory_Item: {fileID: 2626820827939499227}

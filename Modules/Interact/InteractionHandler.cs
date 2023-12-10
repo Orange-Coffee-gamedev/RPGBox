@@ -88,6 +88,7 @@ public class InteractionHandler : MonoBehaviour
         InteractText.gameObject.SetActive(true);
         InteractTextString = HitGameobject.GetComponent<Interactable>().GetInteractText();
         InteractTextString = InteractTextString.Replace("[KEY]", InteractKey.ToString());
+        InteractTextString = InteractTextString.Replace("[NAME]", HitGameobject.name);
         InteractText.text = InteractTextString;
 
         if (Interactable_Object.GetGlow())
