@@ -20,7 +20,7 @@ public class BuildingHandler : MonoBehaviour
     [SerializeField] private KeyCode SelectedBuildUp = KeyCode.Alpha2; // Rotate Object Key (Default: 2)
     [SerializeField] private KeyCode SelectedBuildDown = KeyCode.Alpha1; // Rotate Object Key (Default: 1)
     [SerializeField] private int SelectedBuildable;
-    public Build_SO[] builds;
+    public SO_Build[] builds;
     public Transform SpawnPos;
     [Space]
     [Header("MISC")]
